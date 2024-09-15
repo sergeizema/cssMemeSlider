@@ -70,3 +70,69 @@ img {
   opacity: 0.8;
   background-color: rgb(255, 255, 255);
 }
+
+
+.dot[for=slide1] {
+  left: 40%;
+}
+
+#slide1:checked ~ .carousel ul {
+  left: 0%;
+}
+
+#slide1:checked ~ .dot[for=slide1] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
+
+.dot[for=slide2] {
+  left: 45%;
+}
+
+#slide2:checked ~ .carousel ul {
+  left: -100%;
+}
+
+#slide2:checked ~ .dot[for=slide2] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
+
+.dot[for=slide3] {
+  left: 50%;
+}
+
+#slide3:checked ~ .carousel ul {
+  left: -200%;
+}
+
+#slide3:checked ~ .dot[for=slide3] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
+
+.dot[for=slide4] {
+  left: 55%;
+}
+
+#slide4:checked ~ .carousel ul {
+  left: -300%;
+}
+
+#slide4:checked ~ .dot[for=slide4] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
+
+.dot[for=slide5] {
+  left: 60%;
+}
+
+#slide5:checked ~ .carousel ul {
+  left: -400%;
+}
+
+#slide5:checked ~ .dot[for=slide5] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
