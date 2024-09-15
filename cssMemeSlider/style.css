@@ -1,0 +1,138 @@
+body {
+  color: white;
+  background-color: #1b1b1b;
+}
+
+h3 {
+    letter-spacing: 2px;
+}
+
+.carousel {
+    margin-top: 30%;
+}
+
+.line, .carousel, .carousel li, .carousel li img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.flex, .main-container, .carousel ul, .carousel-container {
+  display: flex;
+}
+
+.main-container, .carousel ul {
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+}
+
+.carousel-container input {
+  display: none;
+}
+
+.carousel {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.carousel ul {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 500%;
+  transition: left 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.dot {
+  position: absolute;
+  cursor: pointer;
+  margin-left: -7.5px;
+  bottom: -22.5px;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(45, 52, 248);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.dot:hover {
+  opacity: 0.8;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.dot[for=slide1] {
+  left: 40%;
+}
+
+#slide1:checked ~ .carousel ul {
+  left: 0%;
+}
+
+#slide1:checked ~ .dot[for=slide1] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
+
+.dot[for=slide2] {
+  left: 45%;
+}
+
+#slide2:checked ~ .carousel ul {
+  left: -100%;
+}
+
+#slide2:checked ~ .dot[for=slide2] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
+
+.dot[for=slide3] {
+  left: 50%;
+}
+
+#slide3:checked ~ .carousel ul {
+  left: -200%;
+}
+
+#slide3:checked ~ .dot[for=slide3] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
+
+.dot[for=slide4] {
+  left: 55%;
+}
+
+#slide4:checked ~ .carousel ul {
+  left: -300%;
+}
+
+#slide4:checked ~ .dot[for=slide4] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
+
+.dot[for=slide5] {
+  left: 60%;
+}
+
+#slide5:checked ~ .carousel ul {
+  left: -400%;
+}
+
+#slide5:checked ~ .dot[for=slide5] {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px rgb(45, 52, 248);
+}
